@@ -1,0 +1,106 @@
+(footprint "NFM21PC"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.25 -8.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b28c6872-652c-4769-9b13-ca1038bac103")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NFM21PC"
+		(at 0.25 -6.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9009d2a0-708f-4579-8980-6d95c82ce2ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0.25 -7.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c70e8eb-6e68-45f2-9434-4bab7546add9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0.25 -7.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "335cf65f-0cf9-4c12-9884-242bd27039d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0.25 -7.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "870bcbf2-d884-44b8-97af-06d3711dd012")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "${REFERENCE}"
+		(at 0.25 -5.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "14d8f94e-56c9-47a1-b36e-6918da62e667")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0.625)
+		(size 0.6 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7033e5b3-ee65-4547-b833-6f5f2ab387ef")
+	)
+	(pad "2" smd rect
+		(at -1 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "432bf14a-0bb4-45d4-ab6a-caf9760b5f70")
+	)
+	(pad "2" smd rect
+		(at 1 0)
+		(size 0.6 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "216f02fc-0005-470b-8c63-47bc62af8ef3")
+	)
+	(pad "3" smd rect
+		(at 0 -0.625)
+		(size 0.6 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a7acd013-6cda-4a39-91df-188a009430e7")
+	)
+)
