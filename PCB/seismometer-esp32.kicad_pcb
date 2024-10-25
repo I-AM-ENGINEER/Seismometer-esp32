@@ -859,7 +859,7 @@
 			(pintype "passive")
 			(uuid "4b696abf-b569-40c0-a42e-409751cd65a3")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Taiyo-Yuden_NR-30xx.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Cenker_CKCS3015.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6067,6 +6067,7 @@
 			(uuid "dfefcae6-26e9-4823-b406-66abbf1c498b")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.00mm.3dshapes/PinHeader_1x02_P2.00mm_Vertical.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6607,6 +6608,17 @@
 			(pinfunction "+")
 			(pintype "passive")
 			(uuid "b2f8756d-7869-436c-a56f-a847c7144158")
+		)
+		(model "${KIPRJMOD}/libs/MIC_ELECTRET-P2,54MM-D9,7MM-H6.5MM.stp"
+			(offset
+				(xyz 1.27 2 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 -90)
+			)
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3"
@@ -9649,6 +9661,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/libs/Small_pushbutton_pad.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 		(layer "F.Cu")
@@ -10888,7 +10911,7 @@
 			(at 3.83 0.95 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(uuid "f3a589bf-c470-4f44-afc1-1e4292228828")
+			(uuid "0b28f257-c36b-43a9-9839-77acc49dae27")
 			(effects
 				(font
 					(size 1 1)
@@ -10900,7 +10923,7 @@
 			(at 7.62 -6.35 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "69099919-1a07-4934-b0aa-44ab47f2a3dd")
+			(uuid "aac869a6-6d1a-4f8e-aec4-1048f8ce7592")
 			(effects
 				(font
 					(size 1 1)
@@ -10913,7 +10936,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "27a5b25e-807d-4eb0-adbe-b317df31151b")
+			(uuid "44a6074a-9817-4a59-bd8b-c8effe0695a1")
 			(effects
 				(font
 					(size 1 1)
@@ -10926,7 +10949,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3db5ece-252d-421e-982a-f75e248ea147")
+			(uuid "60c4de26-1544-4b40-a186-59b5a0275e88")
 			(effects
 				(font
 					(size 1 1)
@@ -10939,7 +10962,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f813f69f-a3b4-46f5-9d3b-f1f2bfa2d691")
+			(uuid "5a895a1b-6298-4ea5-b71f-7be008137c50")
 			(effects
 				(font
 					(size 1 1)
@@ -10948,8 +10971,6 @@
 			)
 		)
 		(path "/e74e642f-6843-4a57-aab2-a8bb4d6a0859")
-		(sheetname "Root")
-		(sheetfile "seismometer-esp32.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.254 20.922)
@@ -10959,7 +10980,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "7599dcb0-d6d8-4a24-b493-b92161f1fbb9")
+			(uuid "a368d8a2-f32b-4e58-aca4-ad4fb363520b")
 		)
 		(fp_line
 			(start 18.034 20.922)
@@ -10969,7 +10990,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "df06b5e4-3ac4-4703-86c2-6314526e253c")
+			(uuid "80122eb3-7691-4a44-9893-b53359e57c1c")
 		)
 		(fp_line
 			(start -0.254 19.05)
@@ -10979,7 +11000,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "b7273212-041a-407d-8b50-fb7be31b3e75")
+			(uuid "8e6eb510-8a78-4f19-b9d5-cce927c22c29")
 		)
 		(fp_line
 			(start -0.254 -1.778)
@@ -10989,7 +11010,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "283364fd-5370-42e3-843f-02c7425d5186")
+			(uuid "d161293b-f564-4e0a-a84e-f9f82b6a4b5b")
 		)
 		(fp_rect
 			(start 5.842 -3.302)
@@ -11000,13 +11021,13 @@
 			)
 			(fill none)
 			(layer "F.SilkS")
-			(uuid "0dc11a42-84ab-445c-b512-9514b3218c1c")
+			(uuid "908a9f02-892b-49f4-8961-ebd87ce3c061")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 7.62 -4.85 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "a78c2c8b-aba2-4f84-bb3b-87d3c612712b")
+			(uuid "848bc54c-8b34-4be6-b6fd-b8eb0d8709f1")
 			(effects
 				(font
 					(size 1 1)
@@ -11023,7 +11044,7 @@
 			(pinfunction "GPIO5")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "f38de0e7-b77a-4679-92c7-10b4ebcb5fdb")
+			(uuid "18c752ab-2092-43b3-8cfe-50d91840a130")
 		)
 		(pad "2" smd roundrect
 			(at 0 2.54 270)
@@ -11034,7 +11055,7 @@
 			(pinfunction "GPIO6")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "8ea84955-f9a4-4c38-b158-e2d874ec7554")
+			(uuid "02ffe444-954e-4147-86ab-2bdc18b16d17")
 		)
 		(pad "3" smd roundrect
 			(at 0 5.08 270)
@@ -11045,7 +11066,7 @@
 			(pinfunction "GPIO7")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
-			(uuid "4fea4e85-4866-47f6-8aac-e5fb32e73a14")
+			(uuid "d53e9297-0fcf-47f7-b845-78430147ee8a")
 		)
 		(pad "4" smd roundrect
 			(at 0 7.62 270)
@@ -11056,7 +11077,7 @@
 			(pinfunction "GPIO8")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
-			(uuid "16374f0a-5da7-4f19-bb5f-bc0a8f89d2c6")
+			(uuid "25437548-69f8-43ff-8a2b-dbb02632235c")
 		)
 		(pad "5" smd roundrect
 			(at 0 10.16 270)
@@ -11067,7 +11088,7 @@
 			(pinfunction "GPIO9")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "3b35196e-8bb5-4640-87b2-260064000a77")
+			(uuid "1cfd22af-7eaf-4207-81e1-c426cde0265e")
 		)
 		(pad "6" smd roundrect
 			(at 0 12.7 270)
@@ -11078,7 +11099,7 @@
 			(pinfunction "GPIO10")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "1c58c91a-e6fc-4fc5-9c4e-82ba422525a6")
+			(uuid "7617bcf2-ca57-44c4-a689-4f6e76761897")
 		)
 		(pad "7" smd roundrect
 			(at 0 15.24 270)
@@ -11089,7 +11110,7 @@
 			(pinfunction "GPIO20")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "d2443a15-f4d1-4e9a-9e19-8f05b126ee38")
+			(uuid "ff776e0d-6eaf-40c4-a29b-22cbb32af1c8")
 		)
 		(pad "8" smd roundrect
 			(at 0 17.78 270)
@@ -11100,7 +11121,7 @@
 			(pinfunction "GPIO21")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "5d147f4e-3ee3-4feb-8095-851e385e2a8c")
+			(uuid "88bcb662-5f08-4941-8de9-38b5e7da9a92")
 		)
 		(pad "9" smd roundrect
 			(at 17.78 17.78 270)
@@ -11111,7 +11132,7 @@
 			(pinfunction "GPIO0")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "273557ec-8cee-44ab-8fad-30995094638f")
+			(uuid "cabedd81-3f9a-403f-9042-fd0e8ac4d426")
 		)
 		(pad "10" smd roundrect
 			(at 17.78 15.24 270)
@@ -11122,7 +11143,7 @@
 			(pinfunction "GPIO1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "19c682c2-c127-459d-add8-ad214a645d18")
+			(uuid "9e37aa17-0357-4bcf-a026-f446b9303df9")
 		)
 		(pad "11" smd roundrect
 			(at 17.78 12.7 270)
@@ -11133,7 +11154,7 @@
 			(pinfunction "GPIO2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "ada5022b-5deb-4f3f-ba8e-baff2928cc3b")
+			(uuid "929eb1b3-c8bb-40ff-a575-2dd84124c070")
 		)
 		(pad "12" smd roundrect
 			(at 17.78 10.16 270)
@@ -11144,7 +11165,7 @@
 			(pinfunction "GPIO3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "e39db18f-da15-4f9e-b944-0ebe01e74833")
+			(uuid "61db7906-a514-49b6-8e80-5072d59c17cf")
 		)
 		(pad "13" smd roundrect
 			(at 17.78 7.62 270)
@@ -11155,7 +11176,7 @@
 			(pinfunction "GPIO4")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
-			(uuid "d7347d96-38ed-48c1-9e42-b21a00d87e2f")
+			(uuid "da10f51c-08eb-42bf-b10b-f6f0cf74e9a9")
 		)
 		(pad "14" smd roundrect
 			(at 17.78 5.08 270)
@@ -11166,7 +11187,7 @@
 			(pinfunction "3V3")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
-			(uuid "113ede8f-273e-480a-89a3-7df926554ea3")
+			(uuid "e5ff046c-cf1c-40c5-97b2-b1a2ef263334")
 		)
 		(pad "15" smd roundrect
 			(at 17.78 2.54 270)
@@ -11177,7 +11198,7 @@
 			(pinfunction "GND")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
-			(uuid "a5a702a3-7276-4bf4-a496-2c654e5ea730")
+			(uuid "2f744f21-3e80-4636-ba61-b75c06717720")
 		)
 		(pad "16" smd roundrect
 			(at 17.78 0 270)
@@ -11188,7 +11209,18 @@
 			(pinfunction "5V")
 			(pintype "power_in+no_connect")
 			(thermal_bridge_angle 45)
-			(uuid "3fdb4da1-e8c1-44ec-a249-03177fac9693")
+			(uuid "e176a7a3-9b5e-46e5-bd10-7573024d2f25")
+		)
+		(model "${KIPRJMOD}/libs/ESP32-C3 SuperMini.stp"
+			(offset
+				(xyz -0.1 -21 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
+			)
 		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
@@ -11902,7 +11934,7 @@
 			(pintype "passive")
 			(uuid "47ea7719-9a90-4e97-89c2-7626f6b08328")
 		)
-		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Taiyo-Yuden_NR-40xx.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Cenker_CKCS4020.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14385,6 +14417,17 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/libs/DC_Barrel_Assy.stp"
+			(offset
+				(xyz -14 0 5.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 90)
 			)
 		)
 	)

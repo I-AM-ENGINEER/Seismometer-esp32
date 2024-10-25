@@ -489,7 +489,7 @@
       "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "seismometer-esp32.step",
       "svg": "",
       "vrml": ""
     },

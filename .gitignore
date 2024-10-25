@@ -27,3 +27,6 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+/Case/OldVersions
+/Case/seismometer-esp32
+/Case/Assembly1

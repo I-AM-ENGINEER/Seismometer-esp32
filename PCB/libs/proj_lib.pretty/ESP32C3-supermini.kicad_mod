@@ -258,4 +258,15 @@
 		(thermal_bridge_angle 45)
 		(uuid "11f8783d-c80d-49d5-abdd-cc8df7af9b9a")
 	)
+	(model "${KIPRJMOD}/libs/ESP32-C3 SuperMini.stp"
+		(offset
+			(xyz -0.1 -21 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
 )
