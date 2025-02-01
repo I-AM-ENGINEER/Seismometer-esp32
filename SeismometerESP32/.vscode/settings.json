@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "i2s_std.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "mqtt_client.h": "c",
+        "esp_task_wdt.h": "c",
+        "inet.h": "c",
+        "i2s_platform.h": "c",
+        "esp_log.h": "c",
+        "freertos.h": "c",
+        "soc.h": "c",
+        "sockets.h": "c",
+        "dsp_task.h": "c",
+        "gpio_sig_map.h": "c",
+        "esp_intr_alloc.h": "c",
+        "task.h": "c",
+        "i2s_task.h": "c",
+        "esp_event.h": "c",
+        "wifi_task.h": "c",
+        "config.h": "c",
+        "esp_wifi.h": "c",
+        "stdio.h": "c",
+        "stdint.h": "c",
+        "string.h": "c",
+        "queue.h": "c",
+        "stdbool.h": "c",
+        "cstdint": "c"
+    }
+}

@@ -1,0 +1,1 @@
+%HOMEPATH%\zephyrproject\.venv\Scripts\activate.bat

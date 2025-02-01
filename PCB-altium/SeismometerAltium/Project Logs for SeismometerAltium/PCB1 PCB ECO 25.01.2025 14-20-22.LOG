@@ -1,0 +1,700 @@
+Added Component: Designator=C1(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C2(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAPC1608X90N)
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C4(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CAPC1608X90N)
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C6(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C7(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C8(CAPC1608X90N)
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C9(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C10(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C11(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C12(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C13(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C14(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C15(CAPC1608X90N)
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C16(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=C17(C_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.murata.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.murata.com/products/catalog/pdf/c02e.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "MURATA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GRM 0603 0,1 мкФ ±10% 50В X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "GRM188R71H104KA93#"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ValueSCH"; Value = "0,1мк"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Конденсатор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=D1(TSSOP14)
+Added Component: Designator=D2(SOT223)
+Added Component: Designator=D3(SO-14)
+Added Component: Designator=D4(SOT23-6)
+Added Component: Designator=DA1(TSOT23-5L)
+Added Component: Designator=DA2(TSOT23-5L)
+Added Component: Designator=L1(C_0603_(1608))
+Added Component: Designator=L2(C_0603_(1608))
+Added Component: Designator=R1(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R2(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R4(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R5(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R6(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R7(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R8(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R9(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R10(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R11(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R12(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R13(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Added Component: Designator=R14(R_0603_(1608))
+Add component (AddParameter): Name = "Analog"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "www.bourns.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/CR0402.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Group"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ManufacturerCountry"; Value = "США"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "CR 0402 4,7 кОм ±1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CR0402-FX-4701G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PCB_Layout"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Status"; Value = "Разрешен"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Наименование"; Value = "Резистор"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Обозначение"; Value = "(null)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Раздел"; Value = "Прочие изделия"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found BNC-7044
+Added Pin To Net: NetName=+3.3V Pin=C15-2
+Added Pin To Net: NetName=+3.3V Pin=C16-2
+Added Pin To Net: NetName=+3.3V Pin=R11-2
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+5VA Pin=C1-2
+Added Pin To Net: NetName=+5VA Pin=C4-2
+Added Pin To Net: NetName=+5VA Pin=C9-2
+Added Pin To Net: NetName=+5VA Pin=C10-2
+Added Pin To Net: NetName=+5VA Pin=C13-2
+Added Pin To Net: NetName=+5VA Pin=D1-14
+Added Pin To Net: NetName=+5VA Pin=D2-2
+Added Pin To Net: NetName=+5VA Pin=D2-2
+Added Pin To Net: NetName=+5VA Pin=D3-3
+Added Pin To Net: NetName=+5VA Pin=D3-4
+Added Pin To Net: NetName=+5VA Pin=DA1-4
+Added Pin To Net: NetName=+5VA Pin=DA2-4
+Added Net: Name=+5VA
+Added Pin To Net: NetName=GAIN_1 Pin=D1-13
+Added Net: Name=GAIN_1
+Added Pin To Net: NetName=GAIN_10 Pin=D1-5
+Added Net: Name=GAIN_10
+Added Pin To Net: NetName=GAIN_100 Pin=D1-6
+Added Net: Name=GAIN_100
+Added Pin To Net: NetName=GAIN_1000 Pin=D1-12
+Added Net: Name=GAIN_1000
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=GND Pin=D1-7
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=D3-5
+Added Pin To Net: NetName=GND Pin=D3-10
+Added Pin To Net: NetName=GND Pin=D3-11
+Added Pin To Net: NetName=GND Pin=D3-12
+Added Pin To Net: NetName=GND Pin=D4-1
+Added Pin To Net: NetName=GND Pin=DA1-2
+Added Pin To Net: NetName=GND Pin=DA2-2
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=DA1-3
+Added Pin To Net: NetName=NetC2_1 Pin=R2-2
+Added Pin To Net: NetName=NetC2_1 Pin=R3-1
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=DA1-5
+Added Pin To Net: NetName=NetC2_2 Pin=R3-2
+Added Pin To Net: NetName=NetC2_2 Pin=R4-1
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=D4-3
+Added Pin To Net: NetName=NetC3_2 Pin=L1-2
+Added Pin To Net: NetName=NetC3_2 Pin=L2-1
+Added Pin To Net: NetName=NetC3_2 Pin=R10-2
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=C6-2
+Added Pin To Net: NetName=NetC5_2 Pin=C7-2
+Added Pin To Net: NetName=NetC5_2 Pin=D2-3
+Added Pin To Net: NetName=NetC5_2 Pin=L2-2
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=D1-1
+Added Pin To Net: NetName=NetC8_1 Pin=D1-4
+Added Pin To Net: NetName=NetC8_1 Pin=D1-8
+Added Pin To Net: NetName=NetC8_1 Pin=D1-11
+Added Pin To Net: NetName=NetC8_1 Pin=DA2-3
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=D1-10
+Added Pin To Net: NetName=NetC8_2 Pin=DA2-5
+Added Pin To Net: NetName=NetC8_2 Pin=R8-1
+Added Pin To Net: NetName=NetC8_2 Pin=R9-1
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetC11_2 Pin=C11-2
+Added Pin To Net: NetName=NetC11_2 Pin=D3-14
+Added Pin To Net: NetName=NetC11_2 Pin=R9-2
+Added Net: Name=NetC11_2
+Added Pin To Net: NetName=NetC14_1 Pin=C14-1
+Added Pin To Net: NetName=NetC14_1 Pin=D4-6
+Added Net: Name=NetC14_1
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC14_2 Pin=D4-2
+Added Net: Name=NetC14_2
+Added Pin To Net: NetName=NetC17_2 Pin=C17-2
+Added Pin To Net: NetName=NetC17_2 Pin=R14-2
+Added Net: Name=NetC17_2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R5-1
+Added Pin To Net: NetName=NetD1_2 Pin=R6-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD1_3 Pin=D1-3
+Added Pin To Net: NetName=NetD1_3 Pin=R6-1
+Added Pin To Net: NetName=NetD1_3 Pin=R7-2
+Added Net: Name=NetD1_3
+Added Pin To Net: NetName=NetD1_9 Pin=D1-9
+Added Pin To Net: NetName=NetD1_9 Pin=R7-1
+Added Pin To Net: NetName=NetD1_9 Pin=R8-2
+Added Net: Name=NetD1_9
+Added Pin To Net: NetName=NetD3_6 Pin=D3-6
+Added Net: Name=NetD3_6
+Added Pin To Net: NetName=NetD3_7 Pin=D3-7
+Added Net: Name=NetD3_7
+Added Pin To Net: NetName=NetD3_8 Pin=D3-8
+Added Net: Name=NetD3_8
+Added Pin To Net: NetName=NetD3_9 Pin=D3-9
+Added Net: Name=NetD3_9
+Added Pin To Net: NetName=NetD4_4 Pin=D4-4
+Added Pin To Net: NetName=NetD4_4 Pin=R11-1
+Added Pin To Net: NetName=NetD4_4 Pin=R12-2
+Added Net: Name=NetD4_4
+Added Pin To Net: NetName=NetD4_5 Pin=D4-5
+Added Pin To Net: NetName=NetD4_5 Pin=R10-1
+Added Net: Name=NetD4_5
+Added Pin To Net: NetName=NetD5_8 Pin=R13-2
+Added Net: Name=NetD5_8
+Added Pin To Net: NetName=NetDA1_1 Pin=DA1-1
+Added Pin To Net: NetName=NetDA1_1 Pin=R1-1
+Added Net: Name=NetDA1_1
+Added Pin To Net: NetName=NetDA2_1 Pin=DA2-1
+Added Pin To Net: NetName=NetDA2_1 Pin=R4-2
+Added Net: Name=NetDA2_1
+Added Pin To Net: NetName=NetHL1_2 Pin=R13-1
+Added Net: Name=NetHL1_2
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=VREF Pin=C12-2
+Added Pin To Net: NetName=VREF Pin=D3-1
+Added Pin To Net: NetName=VREF Pin=R1-2
+Added Pin To Net: NetName=VREF Pin=R2-1
+Added Net: Name=VREF
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1
