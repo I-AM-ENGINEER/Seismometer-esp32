@@ -16,8 +16,6 @@ extern QueueHandle_t package_send_queue;
 //extern QueueHandle_t i2s_raw_adc_queue;
 static i2s_dma_package_t pkg;
 
-#define MAX_VOLUME_24BIT (8388607)  // Maximum absolute value for a 24-bit signed integer
-
 // Unpack 24-bit data to 32-bit signed integer
 
 

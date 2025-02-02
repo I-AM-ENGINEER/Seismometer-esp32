@@ -6,7 +6,7 @@
 
 typedef struct {
     uint64_t timestamp;
-    uint8_t data[I2S_DMA_BUFFER_SIZE * I2S_DMA_FRAMES_BUFFER];
+    int16_t data[I2S_SAMPLES_MONO_FRAME * I2S_DMA_FRAMES_BUFFER / 2];
 } i2s_dma_package_t;
 
 void i2s_task( void *arg );

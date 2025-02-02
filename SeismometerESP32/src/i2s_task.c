@@ -14,6 +14,7 @@
 #include "soc/i2s_reg.h"
 #include "soc/i2s_struct.h"
 #include "soc/interrupts.h"
+//#include "libslac.h"
 
 static const char *TAG = "I2S";
 
@@ -74,24 +75,20 @@ i2s_chan_config_t rx_chan_cfg = {
 };
 
 static i2s_dma_package_t* pkg;
-static uint8_t* i2s_adc_raw_buffer;
+//static uint8_t* i2s_adc_raw_buffer;
 //static QueueHandle_t i2s_isr_queue;
 
 static uint8_t *i2s_isr_pkg_buff;
 
-static bool IRAM_ATTR i2s_receive_ISR( i2s_chan_handle_t handle, i2s_event_data_t *event, void *user_ctx ){
-    static int sended_packs = 0;
+static bool IRAM_ATTR i2s_receive_ISR(i2s_chan_handle_t handle, i2s_event_data_t *event, void *user_ctx) {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
-
-    memcpy(&i2s_isr_pkg_buff[I2S_DMA_BUFFER_SIZE * sended_packs], event->data, I2S_DMA_BUFFER_SIZE);
-    sended_packs++;
-    if(sended_packs == I2S_DMA_FRAMES_BUFFER){
-        sended_packs = 0;
-        xTaskNotifyFromISR(i2s_task_handle, 0, eNoAction, pdFALSE);
-        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
-    }
+    memcpy(i2s_isr_pkg_buff, event->data, event->size);
+    xTaskNotifyFromISR(i2s_task_handle, 0, eNoAction, &xHigherPriorityTaskWoken);
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     return pdTRUE;
 }
+
+
 
 void i2s_task( void *arg ){
     i2s_event_callbacks_t callbacks = {
@@ -102,9 +99,15 @@ void i2s_task( void *arg ){
     };
 
     //i2s_isr_queue = xQueueCreate(8, I2S_DMA_BUFFER_SIZE);
-    i2s_isr_pkg_buff = malloc(I2S_DMA_BUFFER_SIZE * I2S_DMA_FRAMES_BUFFER);
-
-    i2s_adc_raw_buffer = (uint8_t*)malloc(I2S_DMA_BUFFER_SIZE);//I2S_RAW_BUFFER_SIZE
+    //i2s_isr_pkg_buff = malloc(I2S_DMA_BUFFER_SIZE);
+    //if(i2s_isr_pkg_buff == NULL){
+    //    ESP_LOGE(TAG, "FAILED BUFFER ALLOCATION");
+    //    vTaskDelete(NULL);
+    //}
+    //int16_t* single_channel_buff = (int32_t*)malloc(I2S_SAMPLES_MONO_FRAME);
+    i2s_isr_pkg_buff = (uint8_t*)malloc(I2S_DMA_BUFFER_SIZE);
+    uint8_t* single_channel_buff111 = (uint8_t*)malloc(I2S_DMA_BUFFER_SIZE);
+    uint8_t* i2s_adc_raw_buffer = (uint8_t*)malloc(I2S_DMA_BUFFER_SIZE);//I2S_RAW_BUFFER_SIZE
     if(i2s_adc_raw_buffer == NULL){
         ESP_LOGE(TAG, "FAILED BUFFER ALLOCATION");
         vTaskDelete(NULL);
@@ -126,36 +129,51 @@ void i2s_task( void *arg ){
 
     //i2s_get_buf_size(rx_chan, i2s_rx_config.slot_cfg.data_bit_width, )
     i2s_channel_read(rx_chan, i2s_adc_raw_buffer, I2S_DMA_BUFFER_SIZE, NULL, 0);
-    while (1) {
-        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+    while (1) {       
+        for(uint32_t i = 0; i < I2S_DMA_FRAMES_BUFFER; i++){
+            ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
+            for(size_t j = 0; j < I2S_SAMPLES_MONO_FRAME; j++){
+                //uint8_t *channel_2_data = &pkg->data[j * 6 + 3];      // 3 bytes for channel 2
+                //int32_t channel_2_value = (int32_t)unpack_24bit(channel_2_data);
+                //pkg->data[j + i * I2S_SAMPLES_MONO_FRAME] = 
+            }
+            //memcpy(pkg->data, i2s_adc_raw_buffer, I2S_DMA_BUFFER_SIZE);
+        }
         //printf("%u\n", ffffffff);
         
-        int64_t tsf_time = esp_wifi_get_tsf_time(ESP_IF_WIFI_STA);
-        portENTER_CRITICAL(NULL);
-        memcpy(pkg->data, i2s_isr_pkg_buff, I2S_DMA_BUFFER_SIZE * I2S_DMA_FRAMES_BUFFER);
-        portEXIT_CRITICAL(NULL);
-        pkg->timestamp = (uint64_t)tsf_time;
+        //int64_t tsf_time = esp_wifi_get_tsf_time(ESP_IF_WIFI_STA);
+        //portENTER_CRITICAL(NULL);
         
-
-
-        for (size_t j = 0; j < sizeof(pkg->data); j += 6) {
-            uint8_t *channel_1_data = &pkg->data[j];          // 3 bytes for channel 1
-            uint8_t *channel_2_data = &pkg->data[j + 3];      // 3 bytes for channel 2
+        //memcpy(pkg->data, i2s_isr_pkg_buff, I2S_DMA_BUFFER_SIZE * I2S_DMA_FRAMES_BUFFER);
+        //portEXIT_CRITICAL(NULL);
+        //pkg->timestamp = (uint64_t)tsf_time;
+        
+        
+        memcpy(single_channel_buff111, i2s_isr_pkg_buff, I2S_DMA_BUFFER_SIZE);
+        for (size_t j = 0; j < (I2S_DMA_BUFFER_SIZE/6); j+=10) {
+            //uint8_t *channel_1_data = &pkg->data[j];          // 3 bytes for channel 1
+            uint8_t *channel_2_data = &single_channel_buff111[j * 6 + 3];      // 3 bytes for channel 2
+            int32_t channel_2_value = (int32_t)unpack_24bit(channel_2_data);
+            //memcpy(&single_channel_buff[j/6], channel_2_data, 3);
+            //single_channel_buff[j] = channel_2_value;
+            //int32_t channel_1_value = (int32_t)unpack_24bit(channel_1_data);
+        
             
-            int32_t channel_1_value = unpack_24bit(channel_1_data);
-            int32_t channel_2_value = unpack_24bit(channel_2_data);
-
             // Calculate the volume as a relative value between 0.0 and 1.0
-            float volume_1 = (float)channel_1_value / (float)MAX_VOLUME_24BIT;
+            //float volume_1 = (float)channel_1_value / (float)MAX_VOLUME_24BIT;
             float volume_2 = (float)channel_2_value / (float)MAX_VOLUME_24BIT;
             
             // Print the relative volume for each channel
-            printf("%.6f %.6f\n", volume_1, volume_2);
+            
+            printf("%ld\n", (int32_t)(volume_2*128.0f));
             //printf("%02hhX%02hhX%02hhX", channel_1_data[0], channel_1_data[1], channel_1_data[2]);
             //printf("%hhu %hhu %hhu %hhu %hhu %hhu\n", channel_1_data[0], channel_1_data[1], channel_1_data[2], channel_2_data[0], channel_2_data[1], channel_2_data[2]);
         }
 
 
+        //size_t compressed_size = (size_t)compress_audio_block(single_channel_buff, single_channel_buff_size/4, 1, 0, (char*)compressed_buff, single_channel_buff_size);
+        //size_t ucompressed_size = single_channel_buff_size;
+        //printf("%u %u\n", compressed_size, ucompressed_size);
         //ESP_LOGI(TAG, "I2S readed!");
         //printf("%lld\n", tsf_time);
         //vTaskDelay(pdMS_TO_TICKS(1000));

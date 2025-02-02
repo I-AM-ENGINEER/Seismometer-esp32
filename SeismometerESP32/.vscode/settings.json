@@ -26,6 +26,8 @@
         "string.h": "c",
         "queue.h": "c",
         "stdbool.h": "c",
-        "cstdint": "c"
+        "cstdint": "c",
+        "libslac.h": "c",
+        "interrupts.h": "c"
     }
 }

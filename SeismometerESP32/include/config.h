@@ -14,8 +14,10 @@
 #define I2S_SAMPLERATE                      8000
 
 // Multiply to 4*2 for get bytes size
-#define I2S_DMA_FRAMES                      240
+#define I2S_DMA_FRAMES                      480
 #define I2S_DMA_FRAME_SIZE                  8
+#define I2S_SAMPLES_MONO_FRAME              (I2S_DMA_FRAMES * I2S_DMA_FRAME_SIZE / 2 / 3)
+#define I2S_SAMPLES_STEREO_FRAME            (I2S_SAMPLES_MONO_FRAME * 2)
 #define I2S_DMA_FRAMES_BUFFER               4
 
 #define IP_TARGET                           "192.168.1.10"
