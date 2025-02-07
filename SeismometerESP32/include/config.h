@@ -30,6 +30,10 @@
 #define WIFI_PWD                            "1SimplePass9"
 
 
+#define TFS_SYNC_TIME_PERIOD_S      (5)
+#define TFS_SYNC_TFS_PERIOD_MS      (100)
+#define TFS_SYNC_ARRAY_COUNT        ((1000/TFS_SYNC_TFS_PERIOD_MS)*TFS_SYNC_TIME_PERIOD_S)
+#define TFS_EXPECTED_GAIN           (40)
 
 
 

@@ -1,4 +1,4 @@
-#include "i2s_task.h"
+//#include "i2s_task.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -18,12 +18,7 @@
 
 static const char *TAG = "I2S";
 
-extern TaskHandle_t         dsp_task_handle;
-extern QueueHandle_t        i2s_raw_adc_queue;
-extern volatile bool        wifi_connected;
-
-extern TaskHandle_t i2s_task_handle;
-
+/*
 static i2s_chan_handle_t    rx_chan;
 
 #define MAX_VOLUME_24BIT (32768)  // Maximum absolute value for a 24-bit signed integer
@@ -39,18 +34,7 @@ i2s_std_config_t i2s_rx_config = {
         .mclk_multiple = I2S_MCLK_MULTIPLE_384,
     },
     .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_24BIT, I2S_SLOT_MODE_STEREO),
-    /*.slot_cfg = { //I2S_STD_MSB_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_24BIT, I2S_SLOT_MODE_STEREO),
-        .data_bit_width = I2S_DATA_BIT_WIDTH_24BIT, \
-        .slot_bit_width = I2S_SLOT_BIT_WIDTH_AUTO, \
-        .slot_mode = I2S_SLOT_MODE_STEREO, \
-        .slot_mask = I2S_STD_SLOT_BOTH, \
-        .ws_width = 25, \
-        .ws_pol = false, \
-        .bit_shift = true, \
-        .left_align = false, \
-        .big_endian = false, \
-        .bit_order_lsb = false \
-    },*/
+
     .gpio_cfg = {
         .mclk = GPIO_NUM_20,
         .bclk = GPIO_NUM_9,
@@ -74,7 +58,7 @@ i2s_chan_config_t rx_chan_cfg = {
     .intr_priority = 3,
 };
 
-static i2s_dma_package_t* pkg;
+//static i2s_dma_package_t* pkg;
 //static uint8_t* i2s_adc_raw_buffer;
 //static QueueHandle_t i2s_isr_queue;
 
@@ -83,7 +67,7 @@ static uint8_t *i2s_isr_pkg_buff;
 static bool IRAM_ATTR i2s_receive_ISR(i2s_chan_handle_t handle, i2s_event_data_t *event, void *user_ctx) {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
     memcpy(i2s_isr_pkg_buff, event->data, event->size);
-    xTaskNotifyFromISR(i2s_task_handle, 0, eNoAction, &xHigherPriorityTaskWoken);
+    //xTaskNotifyFromISR(i2s_task_handle, 0, eNoAction, &xHigherPriorityTaskWoken);
     portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
     return pdTRUE;
 }
@@ -112,11 +96,11 @@ void i2s_task( void *arg ){
         ESP_LOGE(TAG, "FAILED BUFFER ALLOCATION");
         vTaskDelete(NULL);
     }
-    pkg = (i2s_dma_package_t*)malloc(sizeof(i2s_dma_package_t));
-    if(pkg == NULL){
-        ESP_LOGE(TAG, "FAILED BUFFER ALLOCATION");
-        vTaskDelete(NULL);
-    }
+    //pkg = (i2s_dma_package_t*)malloc(sizeof(i2s_dma_package_t));
+    //if(pkg == NULL){
+    //    ESP_LOGE(TAG, "FAILED BUFFER ALLOCATION");
+    //    vTaskDelete(NULL);
+    //}
 
     ESP_LOGI(TAG, "I2S initializing...");
     ESP_ERROR_CHECK(i2s_new_channel(&rx_chan_cfg, NULL, &rx_chan));
@@ -180,3 +164,4 @@ void i2s_task( void *arg ){
     }
 }
 
+*/
