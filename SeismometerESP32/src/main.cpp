@@ -37,6 +37,7 @@
 LedTask System::Led(GPIO_LED_PIN);
 WiFiTask System::WiFi;
 StateMachine System::StateMch;
+PrecisionTimeTask System::SyncTask;
 MessageQueue<I2S_To_DSP_Package_t> _i2s_to_dsp_queue(10);
 MessageQueue<NetQueueElement_t> _dsp_to_mqtt_queue(10);
 
@@ -164,4 +165,5 @@ void System::Start( void ){
     StateMch.Start("State", 3000, tskIDLE_PRIORITY+2);
     WiFi.SetCredits(WIFI_SSID, WIFI_PWD);
     WiFi.Start("WiFi", 4000, tskIDLE_PRIORITY+1);
+    SyncTask.Start("TSF sync", 4000, configMAX_PRIORITIES - 1);
 }

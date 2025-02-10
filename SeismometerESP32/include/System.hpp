@@ -31,6 +31,7 @@ public:
     static LedTask Led;
     static WiFiTask WiFi;
     static StateMachine StateMch;
+    static PrecisionTimeTask SyncTask;
     static MessageQueue<I2S_To_DSP_Package_t> _i2s_to_dsp_queue;
     static MessageQueue<NetQueueElement_t> _dsp_to_mqtt_queue;
 };

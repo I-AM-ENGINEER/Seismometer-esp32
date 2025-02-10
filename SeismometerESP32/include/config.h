@@ -26,8 +26,8 @@
 #define GPIO_BTN_PIN                        GPIO_NUM_6
 #define GPIO_LED_PIN                        GPIO_NUM_5
 
-#define WIFI_SSID                           "5G_COVID_BASE_STATION"
-#define WIFI_PWD                            "1SimplePass9"
+#define WIFI_SSID                           "5G covid base station"
+#define WIFI_PWD                            "9099033348"
 
 
 #define TFS_SYNC_TIME_PERIOD_S      (5)
