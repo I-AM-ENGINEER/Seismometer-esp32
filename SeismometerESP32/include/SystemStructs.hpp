@@ -17,7 +17,7 @@ typedef struct{
     uint64_t timestamp;
     uint8_t channels_count;
     uint8_t bits_per_single_sample;
-} I2S_To_DSP_Package_t;
+} I2S_to_DSP_package_t;
 
 typedef struct{
     int8_t channel_id;
@@ -65,29 +65,29 @@ template<typename T>
 class MessageQueue {
 public:
     MessageQueue(UBaseType_t length) {
-        queue_ = xQueueCreate(length, sizeof(T));
-        if(queue_ == nullptr){
+        _queue = xQueueCreate(length, sizeof(T));
+        if(_queue == nullptr){
             ESP_LOGE("SYS", "Memory for MessageQueue not enought");
         }
     }
     
     ~MessageQueue() {
-        if (queue_) {
-            vQueueDelete(queue_);
+        if (_queue) {
+            vQueueDelete(_queue);
         }
     }
     
     bool send(const T& data, TickType_t timeout = portMAX_DELAY) {
-        return (xQueueSend(queue_, &data, timeout) == pdPASS);
+        return (xQueueSend(_queue, &data, timeout) == pdPASS);
     }
     
     bool receive(T& data, TickType_t timeout = portMAX_DELAY) {
-        return (xQueueReceive(queue_, &data, timeout) == pdPASS);
+        return (xQueueReceive(_queue, &data, timeout) == pdPASS);
     }
     
-    QueueHandle_t getHandle() const { return queue_; }
+    QueueHandle_t getHandle() const { return _queue; }
     
 private:
-    QueueHandle_t queue_;
+    QueueHandle_t _queue;
 };
 

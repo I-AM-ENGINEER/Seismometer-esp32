@@ -13,6 +13,7 @@
 #include "LedTask.hpp"
 #include "BtnTask.hpp"
 #include "WiFiTask.hpp"
+#include "I2S_Task.hpp"
 
 namespace LedSequence{
     static LedTask::LedSequence unconnected    = { { true, 400 }, { false, 600 } };
@@ -26,14 +27,13 @@ class System {
 public:
     static void Start( void );
 
-//private:
-    //PrecisionTimeTask _TimeTask;
     static LedTask Led;
     static WiFiTask WiFi;
+    static I2S_Task I2S_Reader;
     static StateMachine StateMch;
     static PrecisionTimeTask SyncTask;
-    static MessageQueue<I2S_To_DSP_Package_t> _i2s_to_dsp_queue;
-    static MessageQueue<NetQueueElement_t> _dsp_to_mqtt_queue;
+    static MessageQueue<I2S_to_DSP_package_t> i2s_to_dsp_queue;
+    static MessageQueue<NetQueueElement_t> dsp_to_mqtt_queue;
 };
 
 class StateMachine : public TaskBase {
