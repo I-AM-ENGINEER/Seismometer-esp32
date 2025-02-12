@@ -49,6 +49,11 @@ public:
     i2s_chan_handle_t    rx_chan;
     const char* TAG = "I2S";
     virtual void Run() override;
+
+    void SetGain( sound_frame_gain_t gain ){
+        
+    }
+
 private:
     struct i2s_isr_arg{
         TaskHandle_t task;

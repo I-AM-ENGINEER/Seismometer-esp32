@@ -18,8 +18,11 @@ WiFiTask System::WiFi;
 I2S_Task System::I2S_Reader;
 StateMachine System::StateMch;
 PrecisionTimeTask System::SyncTask;
-MessageQueue<I2S_to_DSP_package_t> System::i2s_to_dsp_queue(1);
-MessageQueue<NetQueueElement_t> System::dsp_to_mqtt_queue(10);
+DSP_Task System::DSP;
+MQTT_Task System::MQTT;
+BTN_CheckerTask System::BTN;
+MessageQueue<I2S_to_DSP_package_t> System::i2s_to_dsp_queue(2);
+MessageQueue<NetQueueElement_t> System::dsp_to_mqtt_queue(2);
 
 static const char *TAG = "MAIN";
 
@@ -41,4 +44,8 @@ void System::Start( void ){
     WiFi.Start("WiFi", 4000, tskIDLE_PRIORITY+1);
     SyncTask.Start("TSF sync", 4000, configMAX_PRIORITIES - 1);
     I2S_Reader.Start("I2S", 5000, 10);
+    DSP.Start("DSP", 2000, 4);
+    BTN.Start("BTN", 2000, 1);
+    //vTaskDelay(pdMS_TO_TICKS(5000));
+    MQTT.Start("MQTT", 3000, 5);
 }

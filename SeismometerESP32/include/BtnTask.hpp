@@ -11,7 +11,8 @@ public:
         gpio_set_pull_mode(GPIO_BTN_PIN, GPIO_PULLDOWN_ONLY);
         
         while (1){
-            vTaskDelay(1000);
+            vTaskDelay(pdMS_TO_TICKS(100));;
+            //printf("%lu\n", (uint32_t)xPortGetFreeHeapSize());
         }
     }
 };

@@ -20,15 +20,21 @@
 #define I2S_SAMPLES_STEREO_FRAME            (I2S_SAMPLES_MONO_FRAME * 2)
 #define I2S_DMA_FRAMES_BUFFER               4
 
-#define IP_TARGET                           "192.168.1.10"
-#define IP_TARGET_PORT                      1235
+#define IP_TARGET                           "192.168.1.17"
+#define IP_TARGET_PORT                      1883
+#define MQTT_USERNAME "demo"
+#define MQTT_PASSWORD "demo"
 
 #define GPIO_BTN_PIN                        GPIO_NUM_6
 #define GPIO_LED_PIN                        GPIO_NUM_5
 
-#define WIFI_SSID                           "5G covid base station"
-#define WIFI_PWD                            "9099033348"
+#define WIFI_SSID                           "5G_COVID_BASE_STATION"
+#define WIFI_PWD                            "1SimplePass9"
 
+#define GPIO_GAIN_1_PIN                     GPIO_NUM_3
+#define GPIO_GAIN_10_PIN                    GPIO_NUM_2
+#define GPIO_GAIN_100_PIN                   GPIO_NUM_1
+#define GPIO_GAIN_1000_PIN                  GPIO_NUM_0
 
 #define TFS_SYNC_TIME_PERIOD_S      (5)
 #define TFS_SYNC_TFS_PERIOD_MS      (100)

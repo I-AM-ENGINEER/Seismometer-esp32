@@ -14,6 +14,8 @@
 #include "BtnTask.hpp"
 #include "WiFiTask.hpp"
 #include "I2S_Task.hpp"
+#include "DSP_Task.hpp"
+#include "MQTT_Task.hpp"
 
 namespace LedSequence{
     static LedTask::LedSequence unconnected    = { { true, 400 }, { false, 600 } };
@@ -32,6 +34,9 @@ public:
     static I2S_Task I2S_Reader;
     static StateMachine StateMch;
     static PrecisionTimeTask SyncTask;
+    static DSP_Task DSP;
+    static MQTT_Task MQTT;
+    static BTN_CheckerTask BTN;
     static MessageQueue<I2S_to_DSP_package_t> i2s_to_dsp_queue;
     static MessageQueue<NetQueueElement_t> dsp_to_mqtt_queue;
 };

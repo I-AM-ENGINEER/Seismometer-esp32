@@ -8948,72 +8948,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 99.06 186.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12c09803-b3e8-4325-8232-de1ac0dadd12")
-		(property "Reference" "#PWR018"
-			(at 99.06 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 99.06 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07120bd9-23cc-4b0e-9bdd-05850fee08b1")
-		)
-		(instances
-			(project "seismometer-esp32"
-				(path "/e70fdb4e-5bdd-4735-a777-5243303267d7"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDDA")
 		(at 217.17 52.07 0)
 		(unit 1)
@@ -14145,6 +14079,72 @@
 			(project "seismometer-esp32"
 				(path "/e70fdb4e-5bdd-4735-a777-5243303267d7"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 99.06 186.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90e65071-34d0-44fe-85dd-e24cd7ebbe4c")
+		(property "Reference" "#PWR018"
+			(at 99.06 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VREF"
+			(at 99.06 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 99.06 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "869e0268-2188-460e-9a4a-ce2d364c7a77")
+		)
+		(instances
+			(project "seismometer-esp32"
+				(path "/e70fdb4e-5bdd-4735-a777-5243303267d7"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)

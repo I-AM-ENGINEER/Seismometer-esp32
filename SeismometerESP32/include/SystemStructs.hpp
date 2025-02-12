@@ -3,6 +3,7 @@
 #include <memory>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_log.h"
 
 typedef enum{
     SOUND_FRAME_GAIN_1 = 0, // Real gain 1
@@ -11,15 +12,15 @@ typedef enum{
     SOUND_FRAME_GAIN_1000,  // Real gain 1110
 } sound_frame_gain_t;
 
-typedef struct{
-    std::unique_ptr<uint8_t[]> data;
+typedef struct __attribute__((packed)){
+    uint8_t* data;
     size_t samples_count;
     uint64_t timestamp;
     uint8_t channels_count;
     uint8_t bits_per_single_sample;
 } I2S_to_DSP_package_t;
 
-typedef struct{
+typedef struct __attribute__((packed)){
     int8_t channel_id;
     uint8_t frames_count;
     uint8_t bits_per_sample;
@@ -27,15 +28,26 @@ typedef struct{
     // Next should be SampleHeader_t * frames_count
 } NetPackageHeader_t;
 
-typedef struct{
+typedef struct __attribute__((packed)){
     uint64_t timespamp;
     float gain;
     // Next should be bytearray
 } SampleHeader_t;
 
+/*
+typedef struct{
+    int8_t channel_id;
+    uint8_t frames_count;
+    uint8_t bits_per_sample;
+    uint16_t samples_per_frame;
+    uint64_t timespamp;
+    float gain;
+    uint16_t data[samples_per_frame];
+}*/
+
 typedef struct{
     size_t package_size;
-    std::unique_ptr<void*> data;
+    uint8_t* data;
 } NetQueueElement_t;
 
 
