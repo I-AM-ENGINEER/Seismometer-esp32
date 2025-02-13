@@ -11,7 +11,7 @@
 #define TCP_RECONNECT_DELAY_MS              100
 #define TCP_MAX_RETRY_DELAY_MS              60000
 // Valid: 96000, 64000, 48000, 32000, 16000, 8000
-#define I2S_SAMPLERATE                      8000
+#define I2S_SAMPLERATE                      16000
 
 // Multiply to 4*2 for get bytes size
 #define I2S_DMA_FRAMES                      480

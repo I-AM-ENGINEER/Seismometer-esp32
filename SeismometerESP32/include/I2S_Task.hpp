@@ -12,7 +12,7 @@
 constexpr i2s_std_config_t i2s_rx_config = {
     .clk_cfg  = {
         .sample_rate_hz = I2S_SAMPLERATE,
-        .clk_src = I2S_CLK_SRC_DEFAULT,
+        .clk_src = I2S_CLK_SRC_XTAL,
         .ext_clk_freq_hz = 0,
         .mclk_multiple = I2S_MCLK_MULTIPLE_384,
     },
@@ -57,7 +57,6 @@ public:
 private:
     struct i2s_isr_arg{
         TaskHandle_t task;
-        uint8_t* rcv_buff;
         uint64_t* timestamp;
     };
 

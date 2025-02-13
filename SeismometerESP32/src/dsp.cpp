@@ -16,7 +16,6 @@ void DSP_Task::Run(void) {
         frame.timespamp = i2s_package.timestamp;
         frame.gain      = 9.0909f;
         pkg_header.samples_per_frame = (uint16_t)i2s_package.samples_count;
-        printf("%lu\n", (uint32_t)pkg_header.samples_per_frame);
 
         const size_t data_size = (size_t)pkg_header.samples_per_frame * (size_t)i2s_package.bits_per_single_sample / 8;
         const size_t package_size =

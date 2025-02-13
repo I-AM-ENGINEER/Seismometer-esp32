@@ -20,8 +20,9 @@ public:
     uint64_t GetTime_ns() {
         uint64_t timer_count = 0;
         gptimer_get_raw_count(hr_timer, &timer_count);
-        uint64_t real_time = static_cast<uint64_t>(_slope * static_cast<double>(timer_count)*25.0f + _offset*1000.0f);
-        return static_cast<uint64_t>(real_time);
+        //uint64_t real_time = static_cast<uint64_t>((_slope / 100'000.0) * static_cast<double>(timer_count)*25.0 + _offset*1000.0);
+        //return static_cast<uint64_t>(real_time);
+        return static_cast<uint64_t>(timer_count);
     }
 
     virtual void Run() override {
@@ -41,6 +42,7 @@ public:
             GetLinearRegression(_slope, _offset);
             reset_high_resolution_timer();
             vPortExitCritical();
+            //ESP_LOGI(TAG, "New slope: %lf, offset: %lf", _slope, _offset);
         }
     }
 private:

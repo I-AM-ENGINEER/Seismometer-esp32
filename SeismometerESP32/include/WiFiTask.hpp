@@ -34,9 +34,10 @@ public:
         ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
         ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
         ESP_ERROR_CHECK(esp_wifi_start());
-        while (true) {
-            vTaskDelay(pdMS_TO_TICKS(1000));
-        }
+        vTaskDelete(NULL);
+        //while (true) {
+        //    vTaskDelay(pdMS_TO_TICKS(1000));
+        //}
     }
 
     void SetCredits( const char* SSID, const char* PSK ){

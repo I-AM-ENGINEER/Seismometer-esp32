@@ -89,8 +89,8 @@ void MQTT_Task::Run() {
         //printf("%s\t%d\n", msg, pkg.package_size);
         //int msg_id = esp_mqtt_client_publish(client, "xui", msg, 0, 0, 0);
         if (msg_id == -1) {
-            
             ESP_LOGW(TAG, "Publish failed, client may not be connected yet.");
+            vTaskDelay(pdMS_TO_TICKS(500));
         }
         vPortFree(pkg.data);
         //vTaskDelay(pdMS_TO_TICKS(100));
