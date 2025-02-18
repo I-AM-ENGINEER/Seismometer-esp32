@@ -18,11 +18,13 @@ public:
     }
     
     uint64_t GetTime_ns() {
+        if(hr_timer == NULL){
+            return 0;
+        }
         uint64_t timer_count = 0;
         gptimer_get_raw_count(hr_timer, &timer_count);
-        //uint64_t real_time = static_cast<uint64_t>((_slope / 100'000.0) * static_cast<double>(timer_count)*25.0 + _offset*1000.0);
-        //return static_cast<uint64_t>(real_time);
-        return static_cast<uint64_t>(timer_count);
+        uint64_t real_time = static_cast<uint64_t>((_slope / 100'000.0) * static_cast<double>(timer_count)*25.0 + _offset*1000.0);
+        return static_cast<uint64_t>(real_time);
     }
 
     virtual void Run() override {

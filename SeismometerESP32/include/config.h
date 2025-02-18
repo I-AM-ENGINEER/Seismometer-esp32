@@ -5,16 +5,16 @@
 //#define UDP_PACKAGE_LENGTH                  3840
 //#define UDP_PACKAGE_QUEUE_LENGTH            1
 
-#define WIFI_TSF_SAMPLE_PERIOD_MS           (60)
+#define WIFI_TSF_SAMPLE_PERIOD_MS           (10)
 #define TCP_PACKAGE_LENGTH                  1460
 #define TCP_PACKAGE_QUEUE_LENGTH            1
 #define TCP_RECONNECT_DELAY_MS              100
 #define TCP_MAX_RETRY_DELAY_MS              60000
 // Valid: 96000, 64000, 48000, 32000, 16000, 8000
-#define I2S_SAMPLERATE                      16000
+#define I2S_SAMPLERATE                      32000
 
 // Multiply to 4*2 for get bytes size
-#define I2S_DMA_FRAMES                      480
+#define I2S_DMA_FRAMES                      120
 #define I2S_DMA_FRAME_SIZE                  8
 #define I2S_SAMPLES_MONO_FRAME              (I2S_DMA_FRAMES * I2S_DMA_FRAME_SIZE / 2 / 3)
 #define I2S_SAMPLES_STEREO_FRAME            (I2S_SAMPLES_MONO_FRAME * 2)

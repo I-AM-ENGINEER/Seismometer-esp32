@@ -12,7 +12,7 @@ public:
         
         while (1){
             vTaskDelay(pdMS_TO_TICKS(100));;
-            //printf("%lu\n", (uint32_t)xPortGetFreeHeapSize());
+            printf("%lu\n", (uint32_t)xPortGetFreeHeapSize());
         }
     }
 };

@@ -7,12 +7,14 @@
 #include <cstdlib>
 #include <cstring>
 
+#define I2S_WS_PIN GPIO_NUM_21
+
 #define MAX_VOLUME_16BIT (32768)  // Maximum absolute value for a 24-bit signed integer
 
 constexpr i2s_std_config_t i2s_rx_config = {
     .clk_cfg  = {
         .sample_rate_hz = I2S_SAMPLERATE,
-        .clk_src = I2S_CLK_SRC_XTAL,
+        .clk_src = I2S_CLK_SRC_PLL_160M,
         .ext_clk_freq_hz = 0,
         .mclk_multiple = I2S_MCLK_MULTIPLE_384,
     },
@@ -21,7 +23,7 @@ constexpr i2s_std_config_t i2s_rx_config = {
     .gpio_cfg = {
         .mclk = GPIO_NUM_20,
         .bclk = GPIO_NUM_9,
-        .ws   = GPIO_NUM_21,
+        .ws   = I2S_WS_PIN,
         .dout = I2S_GPIO_UNUSED,
         .din  = GPIO_NUM_10,
         .invert_flags = {
@@ -38,12 +40,12 @@ constexpr i2s_chan_config_t rx_chan_cfg = {
     .dma_desc_num = 6,
     .dma_frame_num = I2S_DMA_FRAMES,
     .auto_clear = false,
-    .intr_priority = 3,
+    .intr_priority = 7,
 };
 
 
 class I2S_Task : public TaskBase {
-public:
+public: 
     I2S_Task( ){}
     //static uint8_t* i2s_isr_pkg_buff;
     i2s_chan_handle_t    rx_chan;
@@ -61,7 +63,7 @@ private:
     };
 
     static bool IRAM_ATTR i2s_receive_ISR(i2s_chan_handle_t handle, i2s_event_data_t *event, void *user_ctx);
-    
+    void setup_ws_interrupt(void);
     int16_t unpack_24bit(uint8_t* data){
         int16_t val = (data[2] << 8) | data[1];
         return val;

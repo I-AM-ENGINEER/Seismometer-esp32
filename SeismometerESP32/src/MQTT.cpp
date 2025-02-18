@@ -4,23 +4,22 @@
 #include "System.hpp"
 #include "esp_log.h"
 
-void MQTT_Task::mqtt_event_handler(esp_mqtt_event_handle_t event) {
-    switch (event->event_id) {
+static bool is_mqtt_connected = false;
+
+void MQTT_Task::event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
+    auto *self = static_cast<MQTT_Task *>(handler_args);
+    switch (event_id) {
         case MQTT_EVENT_CONNECTED:
-            ESP_LOGI(TAG, "MQTT Connected");
-            esp_mqtt_client_subscribe(client, "test/topic", 0);
+            is_mqtt_connected = true;
+            ESP_LOGI(TAG, "MQTT connected");
             break;
         case MQTT_EVENT_DISCONNECTED:
-            ESP_LOGW(TAG, "MQTT Disconnected");
+            is_mqtt_connected = false;
+            ESP_LOGW(TAG, "MQTT disconnected");
             break;
         default:
             break;
     }
-}
-
-void MQTT_Task::event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
-    MQTT_Task *self = static_cast<MQTT_Task*>(handler_args);
-    self->mqtt_event_handler(static_cast<esp_mqtt_event_handle_t>(event_data));
 }
 
 
@@ -63,8 +62,6 @@ void MQTT_Task::Run() {
     esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, event_handler, this);
     esp_mqtt_client_start(client);
     
-    const char dat[] = "XUI!";
-    
     while (1) {
         if (!System::WiFi.IsConnected()) {
             ESP_LOGW(TAG, "WiFi disconnected, stopping MQTT client...");
@@ -77,22 +74,20 @@ void MQTT_Task::Run() {
             esp_mqtt_client_start(client);
         }
         
-        
-        
-        //xQueueReset(System::dsp_to_mqtt_queue);
+        while (!is_mqtt_connected) {
+            ESP_LOGW(TAG, "MQTT client not connected, restarting MQTT client...");
+            esp_mqtt_client_start(client);
+            vTaskDelay(pdMS_TO_TICKS(500));
+        }
+
         NetQueueElement_t pkg;
         xQueueReceive(System::dsp_to_mqtt_queue.getHandle(), &pkg, portMAX_DELAY);
 
         int msg_id = esp_mqtt_client_publish(client, "xui", (const char*)pkg.data, pkg.package_size, 0, 0);
-        char msg[64];
-        sprintf(msg, "%lu", (uint32_t)xPortGetFreeHeapSize());
-        //printf("%s\t%d\n", msg, pkg.package_size);
-        //int msg_id = esp_mqtt_client_publish(client, "xui", msg, 0, 0, 0);
         if (msg_id == -1) {
             ESP_LOGW(TAG, "Publish failed, client may not be connected yet.");
             vTaskDelay(pdMS_TO_TICKS(500));
         }
         vPortFree(pkg.data);
-        //vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
