@@ -55,7 +55,7 @@ def process_packet(data):
     ]
     return frames
 
-filter = TimestampFilter(max_buffer_size=600)
+filter = TimestampFilter(max_buffer_size=200)
 
 sample_count = 0
 previous_ts = 0
@@ -65,13 +65,17 @@ def process_frame(frame):
     global sample_count, previous_ts
 
     real_ts = frame["timestamp"]
-
+    #print(real_ts - previous_ts)
     #previous_ts = filter.get_approx_ts_from_sample_number(sample_count)
     #expected_dts = expected_ts - filter.get_approx_ts_from_sample_number(sample_count)
     expected_dts = 5000000
     real_dts = real_ts - previous_ts
 
     previous_ts = real_ts
+
+    #if(real_dts > expected_dts*1.5):
+    #    print("ERROR", real_dts/expected_dts)
+
 
     #if(expected_dts == 0):
     #    expected_dts =
@@ -122,7 +126,7 @@ def on_message(client, userdata, message):
 
 
 
-BROKER = "192.168.1.17"
+BROKER = "127.0.0.1"
 TOPIC = "xui"
 
 async def main():
@@ -130,7 +134,7 @@ async def main():
     client.on_message = on_message
     client.username_pw_set("demo", "demo")
     client.connect(BROKER, 1883, 60)
-    client.subscribe(TOPIC)
+    client.subscribe(TOPIC, qos=2)
 
     # Start the MQTT loop in a separate thread (non-blocking)
     client.loop_start()

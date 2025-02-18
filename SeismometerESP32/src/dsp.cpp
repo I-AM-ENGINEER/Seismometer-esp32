@@ -2,7 +2,7 @@
 #include "System.hpp"
 
 
-void DSP_Task::Run(void) {
+void DSP_Task::Run( void* arg ) {
     // How many sample frames to pack into one network package.
     constexpr uint8_t num_frames_per_package = 10; // Change as needed
 

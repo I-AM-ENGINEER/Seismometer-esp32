@@ -23,7 +23,7 @@ void MQTT_Task::event_handler(void *handler_args, esp_event_base_t base, int32_t
 }
 
 
-void MQTT_Task::Run() {
+void MQTT_Task::Run( void* arg ) {
     struct addrinfo hints = {}, *res = NULL;
     hints.ai_family = AF_INET;
     hints.ai_socktype = SOCK_STREAM;

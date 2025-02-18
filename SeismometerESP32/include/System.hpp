@@ -51,7 +51,7 @@ public:
 
     StateMachine() {}
     
-    virtual void Run() override {
+    virtual void Run( void* arg ) override {
         _current_state = STATE_UNCONNECTED;
         System::Led.SetSequence(LedSequence::unconnected);
         while(1){

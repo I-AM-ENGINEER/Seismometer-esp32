@@ -3,6 +3,7 @@
 #include "SystemStructs.hpp"
 #include "driver/i2s_std.h"
 #include "driver/gpio.h"
+#include "driver/gptimer.h"
 #include "esp_log.h"
 #include <cstdlib>
 #include <cstring>
@@ -43,6 +44,16 @@ constexpr i2s_chan_config_t rx_chan_cfg = {
     .intr_priority = 7,
 };
 
+constexpr gptimer_config_t i2s_tim_cfg = {
+    .clk_src = GPTIMER_CLK_SRC_APB,
+    .direction = GPTIMER_COUNT_UP,
+    .resolution_hz = 40'000'000,
+    .intr_priority = 0,
+    .flags = {
+        .intr_shared = 0,
+        .allow_pd = 0
+    }
+};
 
 class I2S_Task : public TaskBase {
 public: 
@@ -50,7 +61,7 @@ public:
     //static uint8_t* i2s_isr_pkg_buff;
     i2s_chan_handle_t    rx_chan;
     const char* TAG = "I2S";
-    virtual void Run() override;
+    virtual void Run( void* arg ) override;
 
     void SetGain( sound_frame_gain_t gain ){
         

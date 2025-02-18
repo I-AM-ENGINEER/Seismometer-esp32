@@ -10,7 +10,7 @@ class WiFiTask : public TaskBase {
 public:
     WiFiTask( void ) {}
     
-    virtual void Run() override {
+    virtual void Run( void* arg ) override {
         esp_wifi_set_ps(WIFI_PS_NONE); // No power save
 
         esp_netif_init();

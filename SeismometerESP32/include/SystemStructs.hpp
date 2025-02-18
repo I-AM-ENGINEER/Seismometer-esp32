@@ -54,10 +54,17 @@ typedef struct{
 class TaskBase {
 public:
     virtual ~TaskBase() {}
-    virtual void Run() = 0;
+    virtual void Run( void* arg ) = 0;
     
-    void Start( const char* name, configSTACK_DEPTH_TYPE stackSize, UBaseType_t priority ) {
-        xTaskCreate(&TaskBase::TaskEntry, name, stackSize, this, priority, &_handle);
+    typedef struct{
+        void* arg;
+        TaskBase* task;
+    } params_t;
+
+    void Start( const char* name, configSTACK_DEPTH_TYPE stackSize, UBaseType_t priority, void* arg ) {
+        _params.arg = arg;
+        _params.task = this;
+        xTaskCreate(&TaskBase::TaskEntry, name, stackSize, &_params, priority, &_handle);
     }
     
 protected:
@@ -65,12 +72,14 @@ protected:
     
 private:
     static void TaskEntry( void* pvParameters ) {
-        TaskBase* pTask = static_cast<TaskBase*>(pvParameters);
+        params_t* params = static_cast<params_t*>(pvParameters);
+        TaskBase* pTask = params->task;
         ESP_LOGE("SYS", "Task %s run", pcTaskGetName(pTask->_handle));
-        pTask->Run();
+        pTask->Run(params->arg);
         ESP_LOGE("SYS", "Task %s delete", pcTaskGetName(pTask->_handle));
         vTaskDelete(nullptr);
     }
+    params_t _params;
 };
 
 template<typename T>

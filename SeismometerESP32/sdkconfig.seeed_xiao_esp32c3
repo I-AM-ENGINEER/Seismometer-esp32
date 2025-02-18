@@ -629,7 +629,7 @@ CONFIG_ESP_ERR_TO_NAME_LOOKUP=y
 #
 # ESP-Driver:GPIO Configurations
 #
-# CONFIG_GPIO_CTRL_FUNC_IN_IRAM is not set
+CONFIG_GPIO_CTRL_FUNC_IN_IRAM=y
 # end of ESP-Driver:GPIO Configurations
 
 #

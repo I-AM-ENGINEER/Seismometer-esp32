@@ -13,7 +13,7 @@ public:
             _led_queue = xQueueCreate(3, sizeof(LedSequence*));
         }
 
-    virtual void Run() override {
+    virtual void Run( void* arg ) override {
         gpio_reset_pin(_pin);
         gpio_set_direction(_pin, GPIO_MODE_OUTPUT);
         LedSequence current_sequence = { { false, UINT32_MAX } };
