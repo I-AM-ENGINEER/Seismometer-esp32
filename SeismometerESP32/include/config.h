@@ -22,8 +22,8 @@
 
 #define IP_TARGET                           "192.168.1.17"
 #define IP_TARGET_PORT                      1883
-#define MQTT_USERNAME "demo"
-#define MQTT_PASSWORD "demo"
+#define MQTT_USERNAME                       "demo"
+#define MQTT_PASSWORD                       "demo"
 
 #define GPIO_BTN_PIN                        GPIO_NUM_6
 #define GPIO_LED_PIN                        GPIO_NUM_5
