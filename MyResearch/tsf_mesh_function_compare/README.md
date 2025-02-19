@@ -20,3 +20,5 @@ esp_mesh_get_tsf_time() much better than esp_wifi_get_tsf_time():
 2) Less deviation
 
 Network load doesnt affect to tsf timestamp
+
+Accuracy of TSF functions doesnt much depand on access point device
