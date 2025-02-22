@@ -8,10 +8,8 @@
 #include "esp_log.h"
 #include "string.h"
 
-#define USE_MESH_TSF_INSTEAD_WIFI           (true)
-
-#define WIFI_SSID                           "5G_COVID_BASE_STATION"
-#define WIFI_PASS                           "1SimplePass9"
+#define WIFI_SSID                           "TSF"
+#define WIFI_PASS                           "12345678"
 
 static const char *TAG = "wifi_app";
 void tsf_task( void* arg );
@@ -49,27 +47,26 @@ gptimer_handle_t high_resolution_timer_init( void ) {
     return hr_timer;
 }
 
+typedef struct {
+    uint64_t timestamp_tsf;
+    uint64_t timestamp_tim;  
+} point_t;
+
+gptimer_handle_t hr_timer;
+
 void tsf_task( void* arg ){
     esp_log_level_set("*", ESP_LOG_NONE); // Disable log just for clean capture
     vTaskDelay(pdMS_TO_TICKS(5000));
+    hr_timer = high_resolution_timer_init();
+
     printf("\n***START LOG***\n");
-    gptimer_handle_t hr_timer = high_resolution_timer_init();
     TickType_t task_timestamp = xTaskGetTickCount();
     while(1){
-        uint64_t timestamp_tsf, timestamp_hrtim_tfs_start, timestamp_hrtim_tfs_end;
-        gptimer_get_raw_count(hr_timer, &timestamp_hrtim_tfs_start);
-        #if(USE_MESH_TSF_INSTEAD_WIFI)
+        uint64_t timestamp_tsf, timestamp_tim;
+        gptimer_get_raw_count(hr_timer, &timestamp_tim);
         timestamp_tsf = esp_mesh_get_tsf_time();
-        #else
-        timestamp_tsf = esp_wifi_get_tsf_time(WIFI_IF_STA);
-        #endif
-        gptimer_get_raw_count(hr_timer, &timestamp_hrtim_tfs_end);
-        printf("%llu\t%llu\t%llu\n",
-            timestamp_hrtim_tfs_start, 
-            timestamp_tsf,
-            timestamp_hrtim_tfs_end
-        );
-        xTaskDelayUntil(&task_timestamp, pdMS_TO_TICKS(100));
+        printf("%llu\t%llu\n", timestamp_tim, timestamp_tsf);
+        xTaskDelayUntil(&task_timestamp, pdMS_TO_TICKS(10));
     }
 }
 

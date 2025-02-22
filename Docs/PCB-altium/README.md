@@ -1,0 +1,1 @@
+# The only purpose of this folder is to create documentation for my bachelor's thesis. Just ignore it, there are a lot of errors.

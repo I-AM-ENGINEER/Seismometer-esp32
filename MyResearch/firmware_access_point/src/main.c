@@ -5,7 +5,7 @@
 #include "nvs_flash.h"
 #include "esp_log.h"
 
-#define WIFI_SSID "TSF_AP"
+#define WIFI_SSID "TSF"
 #define WIFI_PASS "12345678"
 
 static const char *TAG = "wifi_ap";

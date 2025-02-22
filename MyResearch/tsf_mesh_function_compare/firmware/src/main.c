@@ -10,8 +10,8 @@
 
 #define USE_MESH_TSF_INSTEAD_WIFI           (true)
 
-#define WIFI_SSID                           "5G_COVID_BASE_STATION"
-#define WIFI_PASS                           "1SimplePass9"
+#define WIFI_SSID                           "TSF_AP"
+#define WIFI_PASS                           "12345678"
 
 static const char *TAG = "wifi_app";
 void tsf_task( void* arg );
