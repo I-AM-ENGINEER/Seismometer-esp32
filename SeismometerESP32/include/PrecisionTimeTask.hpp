@@ -15,7 +15,7 @@
 #include "esp_timer.h"
 #include <cmath>
 
-#define WIFI_TSF_SAMPLE_COUNT       (WIFI_TSF_SAMPLE_PERIOD_MS*10)
+#define WIFI_TSF_SAMPLE_COUNT       (WIFI_TSF_SAMPLE_PERIOD_MS/WIFI_TSF_SAMPLERATE)
 
 class PrecisionTimeTask : public TaskBase {
 public:
@@ -33,7 +33,7 @@ public:
     } TheilTaskParams;
 
 
-    const char* TAG = "TSF";
+    static constexpr char* TAG = "TSF";
     PrecisionTimeTask() {
 
     }
@@ -61,15 +61,15 @@ public:
     }*/
 
     uint64_t ConvertHrtimToNs(uint64_t timer_value) {
-        timer_value -= _timer_offset;
+        //timer_value -= _timer_offset;
         if (_slope == 0.0) {
             // Avoid division by zero.
             return 0;
         }
         double tsf = ((double)timer_value - _offset) / _slope;
         // Round the result to the nearest integer.
-        tsf += _tsf_offset;
-        tsf *= 1000.0;
+        //tsf += _tsf_offset;
+        //tsf *= 1000.0;
         return static_cast<uint64_t>(std::round(tsf));
     }
 
@@ -79,7 +79,7 @@ public:
         while (1) {
             timestamp = xTaskGetTickCount();
             for(size_t sample = 0; sample < WIFI_TSF_SAMPLE_COUNT; sample++){
-                xTaskDelayUntil(&timestamp, pdMS_TO_TICKS(100));
+                xTaskDelayUntil(&timestamp, pdMS_TO_TICKS(WIFI_TSF_SAMPLERATE));
                 int64_t tsf = esp_mesh_get_tsf_time();
                 if(tsf == 0){
                     sample--;
@@ -97,7 +97,7 @@ public:
                 _buff[sample].tsf_ms -= _tsf_offset;
                 _buff[sample].timer_val -= _timer_offset;
             }
-
+            //ESP_LOGI(TAG, "T1:%llu", esp_timer_get_time());
 
             //ESP_LOGI(TAG, "T1:%llu", esp_timer_get_time());
             SemaphoreHandle_t doneSemaphore = xSemaphoreCreateBinary();
@@ -109,20 +109,31 @@ public:
             xSemaphoreTake(doneSemaphore, portMAX_DELAY);
             vSemaphoreDelete(doneSemaphore);
             //ESP_LOGI(TAG, "T2:%llu", esp_timer_get_time());
-            
-            vPortEnterCritical();
+            //vPortEnterCritical();
             _slope = params.slope;
             _offset = params.offset;
             _tsf_offset = tsf_offset;
             _timer_offset = timer_offset;
-            vPortExitCritical();
-            ESP_LOGI(TAG, "New slope: %.8lf, offset: %lf", _slope, _offset);
+            //vPortExitCritical();
+            //printf()
+
+            
+            TimingPoint_t period_point;
+            period_point.timer_val = _buff[(WIFI_TSF_SAMPLE_COUNT / 2)-1].timer_val;
+            period_point.tsf_ms = ConvertHrtimToNs(period_point.timer_val);
+            period_point.timer_val += timer_offset;
+            period_point.tsf_ms += tsf_offset;
+            printf("%llu\t%llu\n", period_point.timer_val, period_point.tsf_ms);
+            
+            //ESP_LOGI(TAG, "New slope: %.8lf, offset: %lf", _slope, _offset);
         }
     }
 
     static void theil_calc_task( void* arg ){
         TheilTaskParams* params = (TheilTaskParams*) arg;
+        //ESP_LOGI(TAG, "T1:%llu", esp_timer_get_time());
         theil_sen_calc(params->data, params->count, params->slope, params->offset);
+        //ESP_LOGI(TAG, "T2:%llu", esp_timer_get_time());
         xSemaphoreGive(params->doneSemaphore);
         vTaskDelete(NULL);
     }

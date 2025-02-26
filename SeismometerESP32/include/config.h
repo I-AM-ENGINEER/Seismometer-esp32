@@ -5,7 +5,8 @@
 //#define UDP_PACKAGE_LENGTH                  3840
 //#define UDP_PACKAGE_QUEUE_LENGTH            1
 
-#define WIFI_TSF_SAMPLE_PERIOD_MS           (10)
+#define WIFI_TSF_SAMPLE_PERIOD_MS           (5000)
+#define WIFI_TSF_SAMPLERATE                 (50)
 #define TCP_PACKAGE_LENGTH                  1460
 #define TCP_PACKAGE_QUEUE_LENGTH            1
 #define TCP_RECONNECT_DELAY_MS              100

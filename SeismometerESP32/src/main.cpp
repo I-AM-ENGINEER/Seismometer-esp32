@@ -63,5 +63,5 @@ void System::Start( void ){
     DSP.Start("DSP", 2000, 4, NULL);
     BTN.Start("BTN", 2000, 2, NULL);
     vTaskDelay(pdMS_TO_TICKS(5000));
-    MQTT.Start("MQTT", 3000, 5, NULL);
+    //MQTT.Start("MQTT", 3000, 5, NULL);
 }

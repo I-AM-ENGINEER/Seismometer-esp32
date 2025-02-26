@@ -1,13 +1,23 @@
-results = struct();
+Capture_period_ms = 10;
+Capture_start_time_s = 0;
+Capture_length_s = 3600*10;
 
-% Чтение и корректировка данных
-data = dlmread('./data/10ms_600s.txt');
+% Определение диапазона строк и столбцов
+startRow = Capture_start_time_s * (1000/Capture_period_ms); % Первая строка для чтения (с учетом отступа)
+endRow = startRow + Capture_length_s * (1000/Capture_period_ms); % Последняя строка для чтения
+range = [startRow, 0, endRow, -1]; % Чтение всех столбцов в указанном диапазоне строк
+
+
+% Чтение данных с учетом табуляции как разделителя
+data = dlmread('./data/esp32ap_10ms_24hr.txt', '\t', [startRow 0 endRow 1]);
+
+% Корректировка данных
 start_mesh = data(:,1) - data(1,1);
 tsf_mesh   = data(:,2) - data(1,2);
 n = length(start_mesh);
 
-% Вычисление эталонных значений для всего файла, используя только 10% данных
-ref_step = round(1 / 0.10);  % каждая 10-я точка
+% Вычисление эталонных значений для всего файла
+ref_step = round(1 / 0.0010);  % каждая 1000-я точка
 ref_indices = 1:ref_step:n;
 [slope_global, offset_global, ~] = computeTheilSen(start_mesh(ref_indices), tsf_mesh(ref_indices), 'Global 10%% dataset');
 global_slope_print = 1 / slope_global;
@@ -15,7 +25,7 @@ global_slope_print = 1 / slope_global;
 fprintf('Offset: %f\n', offset_global);
 fprintf('Slope: %.15f\n', global_slope_print);
 
-% Разбивка данных на чанки по 1000 семплов
+% Разбивка данных на чанки по 300 семплов
 chunkSize = 300;
 numChunks = floor(n / chunkSize);
 
@@ -28,6 +38,7 @@ slopeDiff_all  = zeros(numChunks, 1);
 offsetDiff_all = zeros(numChunks, numPercents);
 
 for c = 1:numChunks
+    fprintf("calc")
     idx_start = (c-1)*chunkSize + 1;
     idx_end = c*chunkSize;
     
@@ -55,9 +66,6 @@ for c = 1:numChunks
         sub_slope_print = 1 / slope_sub;
         
         point_tsf = getApproxTSF(ref_point_tim, slope_sub, offset_sub);
-
-        results.chunks(c).subsets(k).timestamp_tsf = point_tsf;
-        results.chunks(c).subsets(k).percent  = p * 100;
 
         offsetDiff_all(c, k) = abs(point_tsf - ref_point_tsf);
     end
@@ -117,11 +125,6 @@ function [slope, offset, r_squared] = computeTheilSen(x, y, label)
     ss_total = sum((y - mean(y)).^2);
     ss_res   = sum((y - y_est).^2);
     r_squared = 1 - (ss_res / ss_total);
-    
-    %fprintf('%s:\n', label);
-    %fprintf('Slope: %.15f\n', 1 / slope);
-    %fprintf('Offset: %f\n', offset);
-    %fprintf('R² Score: %.15f\n\n', r_squared);
 end
 
 function tsf_value = getApproxTSF(timestamp, slope, offset)
